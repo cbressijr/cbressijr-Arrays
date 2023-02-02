@@ -1,3 +1,4 @@
+import org.hamcrest.Description.NullDescription;
 
 /**
  * An array is a group of some predefined number of elements.
@@ -16,7 +17,7 @@ public class Lab {
      */
     public int getLengthOfArray(int[] arr){
         arr = new int[10];
-        return arr.length;
+        return(arr.length);
         
     }
 
@@ -28,11 +29,12 @@ public class Lab {
      *          Indexes in arrays start counting from zero.
      * @return the element at index n of arr.
      */
-    public int getNthElementOfArray(int[] arr, int n){
-        int[] arr = new int[5];
-        //accesses and sets the first element
-        arr[0] = 4;  
-        return n;
+    public int getNthElementOfArray(int[] arr, int n){ 
+        arr = new int[10];
+        arr[0] = 4;
+        arr[1] = arr[0] + 5;
+        
+        return (arr[n]);
     }
 
     /**
@@ -44,12 +46,9 @@ public class Lab {
      * @return nothing. Because of pass-by-reference, any change to the array will be reflected across our java program.
      */
     public void setNthElementOfArray(int[] arr, int n, int val){
-        int[] arr = {1, 2, 3, 4, 5};
+        arr = new int[10];
+        //accesses and sets the first element
         arr[0] = 4;
-        arr[1] = arr[0] + 5;
-        for (int i=0; i < arr.length; i++) {
-            System.out.println(arr[i]);
-        }
         return;
     }
 
@@ -58,9 +57,10 @@ public class Lab {
      * @return a new int array that can contain n elements.
      */
     public int[] returnNewArraySizeN(int n){
-        int[] arr = new int[5];
-        //accesses and sets the first element
-        arr[0] = 4;
-        return arr;
+        int[] arr2 = {1, 2, 3, 4, 5};
+        for (int n = 0; n < arr2.length; n++) {
+            System.out.println(arr2[n]);
+        }
+        return null;
     }
 }
